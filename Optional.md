@@ -11,7 +11,7 @@ interface I {
     c: bigint;
 }
 
-const i: Optional<I, "c"> = {};
+let i: Optional<I, "c">;
 
 i.a; // Optional
 i.b; // Optional
