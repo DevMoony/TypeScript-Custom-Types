@@ -1,5 +1,5 @@
-**Set Readonly Properties Type**\br
-This type is used to make all properties defined in `T` readonly, except those defined in `P`
+## Set Readonly Properties Type
+### This type is used to make all properties defined in `T` readonly, except those defined in `P`
 
 ```ts
 export type PerformReadonly<T, P extends KeyofType<T>> = {
