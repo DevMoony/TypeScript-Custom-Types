@@ -1,4 +1,4 @@
-**Set Readonly Properties Type**\n
+**Set Readonly Properties Type**\br
 This type is used to make all properties defined in `T` readonly, except those defined in `P`
 
 ```ts
