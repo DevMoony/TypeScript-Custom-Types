@@ -1,8 +1,8 @@
-**Set Readonly Properties Type**
+**Set Readonly Properties Type**\n
 This type is used to make all properties defined in `T` readonly, except those defined in `P`
 
 ```ts
-export type ReadonlyProperties<T, P extends KeyofType<T>> = {
+export type PerformReadonly<T, P extends KeyofType<T>> = {
     readonly [Property in KeyofType<T>]: T[Property]
 } & { -readonly [Prop in P]: T[P] };
 
@@ -14,7 +14,7 @@ interface I {
 }
 
 // Creating an example variable to test the assignment
-const i: ReadonlyProperties<I, "c"> = {};
+const i: PerformReadonly<I, "c"> = {};
 
 i.a = "Aw D:"; // Can't assign as it's Read-Only
 i.b = 16; // Can't assign as it's Read-Only
