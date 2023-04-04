@@ -11,7 +11,7 @@ interface I {
     c?: bigint;
 }
 
-const i: Concrete<I> = {};
+let i: Concrete<I>;
 
 i.a; // Concrete
 i.b; // Concrete
