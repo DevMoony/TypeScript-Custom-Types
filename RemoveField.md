@@ -2,8 +2,8 @@
 ### Example:
 
 ```ts
-export type RemoveField<T, K extends KeyofType<T>> = {
-    [Property in KeyofType<T> as Exclude<Property, K>]: T[Property];
+export type RemoveField<T, K extends keyof T> = {
+    [Property in keyof T as Exclude<Property, K>]: T[Property];
 };
 
 interface I {
