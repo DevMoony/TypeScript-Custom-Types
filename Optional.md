@@ -1,8 +1,8 @@
 ## This type is used to make all properties defined in `T` optional, except those defined in `P`
 ### Example:
 ```ts
-export type Optional<T, P extends KeyofType<T>> = {
-    [Property in KeyofType<T>]?: T[Property];
+export type Optional<T, P extends keyof T> = {
+    [Property in keyof T]?: T[Property];
 } & { [Property in P]-?: T[P]; };
 
 interface I {
