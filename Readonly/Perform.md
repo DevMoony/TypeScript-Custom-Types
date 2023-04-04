@@ -1,4 +1,3 @@
-## Set Readonly Properties Type
 ### This type is used to make all properties defined in `T` readonly, except those defined in `P`
 
 ```ts
