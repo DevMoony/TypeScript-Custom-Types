@@ -2,7 +2,7 @@
 ### Example:
 ```ts
 export type Concrete<T> = {
-    [Property in KeyofType<T>]-?: T[Property];
+    [Property in keyof T]-?: T[Property];
 };
 
 interface I {
