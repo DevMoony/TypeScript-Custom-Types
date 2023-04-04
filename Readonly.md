@@ -13,7 +13,7 @@ interface I {
 }
 
 // Creating an example variable to test the assignment
-const i: PerformReadonly<I, "c"> = {};
+let i: PerformReadonly<I, "c">;
 
 i.a = "Aw D:"; // Can't assign as it's Read-Only
 i.b = 16; // Can't assign as it's Read-Only
