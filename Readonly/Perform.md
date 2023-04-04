@@ -1,5 +1,5 @@
-### This type is used to make all properties defined in `T` readonly, except those defined in `P`
-#### Example:
+## This type is used to make all properties defined in `T` readonly, except those defined in `P`
+### Example:
 ```ts
 export type PerformReadonly<T, P extends KeyofType<T>> = {
     readonly [Property in KeyofType<T>]: T[Property]
