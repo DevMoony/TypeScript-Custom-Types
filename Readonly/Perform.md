@@ -19,3 +19,4 @@ i.a = "Aw D:"; // Can't assign as it's Read-Only
 i.b = 16; // Can't assign as it's Read-Only
 i.c = BigInt(2382398); // Can assign as it's not Read-Only
 ```
+#### P.S.: Properties defined in `P` also work if the properties in `T` are already Read-Only
